@@ -1,5 +1,8 @@
 Welcome to the $10,000 Every Day You Survive Wilderness Challenge Simulator! This interactive tool lets you estimate how many days you could survive in a simulated wilderness scenario and calculate your potential earnings. Adjust various parameters such as health, mental state, daily decreases, and random events to see how long you can last and how much you could earn.
 
+<div align="center"> <img src="https://i.kym-cdn.com/photos/images/newsfeed/002/491/279/26f.gif" alt="Simulator Demo" width="80%"> </div>
+Features:
+
 🏞️ Set initial health and mental state.
 🧠 Adjust daily decreases in health and mental state.
 🔄 Configure health and mental state restoration values.
