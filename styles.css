@@ -13,7 +13,6 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    position: relative; /* Ensure GitHub icon is positioned relative to the container */
 }
 
 h1, h2 {
@@ -65,16 +64,16 @@ button:hover {
     text-align: center;
 }
 
-/* GitHub link styling above the title */
+/* GitHub link styling at the top right */
 .github-link {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 32px; /* Increased size of the GitHub icon */
 }
 
 .github-link a {
     color: #333;
+    font-size: 24px;
     transition: color 0.3s;
 }
 
