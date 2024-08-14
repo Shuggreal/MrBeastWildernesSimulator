@@ -1,81 +1,79 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$10,000 Every Day You Survive Wilderness Challenge Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome for the GitHub icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- GitHub icon with link placed above the title -->
+        <div class="github-link">
+            <a href="https://github.com/Shuggreal" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
-    text-align: center;
-    color: #4CAF50;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.input-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.input-group label {
-    flex: 1;
-    margin-right: 10px;
-}
-
-.input-group input {
-    flex: 2;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-#results {
-    margin-top: 20px;
-    text-align: center;
-}
-
-/* GitHub link styling */
-.github-link {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.github-link a {
-    color: #333;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.github-link a:hover {
-    color: #4CAF50;
-}
+        <h1>$10,000 Every Day You Survive Wilderness Challenge Simulator</h1>
+        <form id="simulationForm">
+            <div class="input-group">
+                <label for="initialHealth">Initial Health:</label>
+                <input type="number" id="initialHealth" name="initialHealth" value="100">
+            </div>
+            <div class="input-group">
+                <label for="initialMentalState">Initial Mental State:</label>
+                <input type="number" id="initialMentalState" name="initialMentalState" value="100">
+            </div>
+            <div class="input-group">
+                <label for="healthDecreasePerDay">Health Decrease Per Day:</label>
+                <input type="number" id="healthDecreasePerDay" name="healthDecreasePerDay" value="1">
+            </div>
+            <div class="input-group">
+                <label for="mentalStateDecreasePerDay">Mental State Decrease Per Day:</label>
+                <input type="number" id="mentalStateDecreasePerDay" name="mentalStateDecreasePerDay" value="1">
+            </div>
+            <div class="input-group">
+                <label for="healthRestore">Health Restore:</label>
+                <input type="number" id="healthRestore" name="healthRestore" value="5">
+            </div>
+            <div class="input-group">
+                <label for="mentalStateRestore">Mental State Restore:</label>
+                <input type="number" id="mentalStateRestore" name="mentalStateRestore" value="5">
+            </div>
+            <div class="input-group">
+                <label for="randomEventProbability">Random Event Probability:</label>
+                <input type="number" id="randomEventProbability" name="randomEventProbability" step="0.01" value="0.1">
+            </div>
+            <div class="input-group">
+                <label for="randomEventImpact">Random Event Impact:</label>
+                <input type="number" id="randomEventImpact" name="randomEventImpact" value="10">
+            </div>
+            <div class="input-group">
+                <label for="dailyEarningsPerPerson">Daily Earnings Per Person:</label>
+                <input type="number" id="dailyEarningsPerPerson" name="dailyEarningsPerPerson" value="10000">
+            </div>
+            <div class="input-group">
+                <label for="numSimulations">Number of Simulations:</label>
+                <input type="number" id="numSimulations" name="numSimulations" value="1000">
+            </div>
+            <button type="submit">Run Simulation</button>
+        </form>
+        <div id="results">
+            <h2>Results</h2>
+            <p id="averageDaysStayed">Average days stayed: </p>
+            <p id="averageEarnings">Average earnings: </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        // Log credit message to the console
+        console.log('%cThis project was made by %cShuggreal', 'color: black; font-size: 16px;', 'color: #4CAF50; font-size: 16px; font-weight: bold;');
+        console.log('%cGitHub: https://github.com/Shuggreal', 'color: #4CAF50; font-size: 14px;');
+        console.log('%c%c   ', 'font-size: 30px; background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"); background-size: cover;', 'background: none;');
+    </script>
+</body>
+</html>
