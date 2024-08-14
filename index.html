@@ -10,16 +10,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <!-- GitHub icon above the title -->
-            <a href="https://github.com/Shuggreal" target="_blank" class="github-link">
+        <!-- GitHub icon with link placed above the title -->
+        <div class="github-link">
+            <a href="https://github.com/Shuggreal" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <h1>$10,000 Every Day You Survive Wilderness Challenge Simulator</h1>
         </div>
 
+        <h1>$10,000 Every Day You Survive Wilderness Challenge Simulator</h1>
         <form id="simulationForm">
-            <!-- Form fields -->
             <div class="input-group">
                 <label for="initialHealth">Initial Health:</label>
                 <input type="number" id="initialHealth" name="initialHealth" value="100">
@@ -62,14 +61,13 @@
             </div>
             <button type="submit">Run Simulation</button>
         </form>
-
         <div id="results">
             <h2>Results</h2>
             <p id="averageDaysStayed">Average days stayed: </p>
             <p id="averageEarnings">Average earnings: </p>
         </div>
     </div>
-
+    
     <script src="script.js"></script>
     <script>
         // Log credit message to the console
