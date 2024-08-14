@@ -12,35 +12,32 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .github-link {
+    display: inline-block;
     margin-bottom: 10px;
+    font-size: 2em; /* Adjust the size of the icon */
 }
 
 .github-link a {
-    font-size: 24px;
     color: black;
     text-decoration: none;
 }
 
 h1 {
     font-size: 24px;
-    color: green;
+    color: #333;
     margin: 0;
 }
 
 .input-group {
     margin: 10px 0;
-    text-align: left;
 }
 
 .input-group label {
@@ -50,13 +47,13 @@ h1 {
 }
 
 .input-group input {
-    width: calc(100% - 20px);
-    padding: 5px;
-    font-size: 14px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
 }
 
 button {
-    background-color: green;
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -64,18 +61,21 @@ button {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    display: block;
+    width: 100%;
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: #45a049;
 }
 
 #results {
     margin-top: 20px;
+    text-align: left;
 }
 
 #results h2 {
-    color: green;
+    color: #4CAF50;
     margin-bottom: 10px;
 }
 
